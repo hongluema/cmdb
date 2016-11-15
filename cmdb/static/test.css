@@ -1,0 +1,36 @@
+/*标签选择器*/
+span {
+    border: 5px solid red;
+}
+/*class选择器, 以点开头, 设置了class=mydiv的都应用*/
+.mydiv {
+    border: 5px solid green;
+    padding: 10px;
+    margin: 15px;
+    width: 200px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+/*id选择器，以#开头，设置id=mydiv的元素应用，注意id不重复*/
+#myid {
+    background-color: gray;
+    position: absolute;
+    top: 200px;
+    right: 100px;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 25px;
+}
+.gun {
+    background-color: black;
+    width: 10px;
+    height: 100px;
+    margin: 0px 0px 0px 20px ;
+}

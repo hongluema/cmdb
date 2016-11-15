@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 我是一个注释 -->
+        <!-- 给浏览器说明编码方式、title等信息-->
+        <meta charset="utf-8" />
+        <title>登陆</title>
+        <link href="/static/test.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="gun"></div>
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+
+        <span>我是span 1</span>
+        <span>我是span 2</span>  
+        <div >我是div 1</div>
+        <div id="myid" class="mydiv circle">我是div 2</div>  
+        <p class="mydiv">我是p 1</p>
+        <p>我是p 2</p>  
+
+
+        <!--表单-->
+        <form action="/login/" method="post">
+            <label>用户名:</label>
+            <input type="text" name="username" value="{{username}}"/>
+            <br/>
+
+            <label>密码:</label>
+            <input type="password" name="password" value="{{password}}"/>
+            <br/>
+
+            <!--下拉框-->
+            <label>部门:</label>
+            <select name="department">
+                <option value="1">研发部门</option>
+                <option value="2">测试部门</option>
+                <option value="3" selected="selected">运维部门</option>
+            </select>
+            <br/>
+
+            <label>性别:</label>
+            <input type="radio" name="sex" value="1" checked="checked" />男
+            <input type="radio" name="sex" value="0" />女
+            <br/>
+
+            <label>爱好</label>
+            <input type="checkbox" name="hobby" value="football"/>足球
+            <input type="checkbox" name="hobby" value="basketball" checked="checked"/>篮球
+            <input type="checkbox" name="hobby" value="pingpong" checked="checked" />乒乓球
+            <br/>
+
+            <label>简介</label>
+            <textarea name="detail">XXXXX</textarea>
+            <br/>
+
+            <label>头像</label>
+            <input type="file" name="icon" />
+            <br/>
+
+            <input type="url" name="homepage" value=""/>
+            <input type="date" name="birthday" value=""/>
+            <input type="email" name="email" value=""/>
+            
+            <input type="button" value="普通按钮" />
+            <input type="reset" value="reset按钮" />
+            <input type="submit" value="登陆"/>
+        </form>
+        <img src="http://www.274745.cc/imgall/obuwgnjonzuxa2ldfzrw63i/20100121/1396946_104643942888_2.jpg"/>
+
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+
+
+        <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ol>
+    </body>
+</html>
