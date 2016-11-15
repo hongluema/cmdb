@@ -1,10 +1,9 @@
 #encoding: utf-8
+import os
 
-USER_DB_PATH = 'user.json'
-
-MYSQL_HOST = '127.0.0.1'
-MYSQL_PORT = 3306
-MYSQL_USER = 'root'
-MYSQL_PASSWD = '123456'
-MYSQL_DB = 'kk'
+MYSQL_HOST = os.environ.get('MYSQL_ADDR', '127.0.0.1')
+MYSQL_PORT = os.environ.get('MYSQL_PORT', 3306)
+MYSQL_USER = os.environ.get('MYSQL_USERNAME', 'root')
+MYSQL_PASSWD = os.environ.get('MYSQL_PASSWORD', '123456')
+MYSQL_DB =os.environ.get('MYSQL_DB', 'kk')
 MYSQL_CHARSET = 'utf8'
