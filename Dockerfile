@@ -6,7 +6,7 @@ RUN mkdir /code
 WORKDIR /code
 COPY . /code
 COPY entrypoint.sh /code/entrypoint.sh
-RUN chmod +x entrypoint.sh
-EXPOSE 80
+RUN chmod +x /code/entrypoint.sh
+EXPOSE 8888
 
 CMD /code/entrypoint.sh
